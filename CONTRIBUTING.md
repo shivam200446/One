@@ -123,6 +123,12 @@ is highly recommended to format your changed C code before opening pull
 requests, which will save you and the reviewers' time.
 
 - [Clang 13 documentation ClangFormat](https://clang.llvm.org/docs/ClangFormat.html)
+- 
+### Make
+   we mentioned creating a Make target for installing `pre-commit` using pip. This is optional, but it can be a convenient way to manage your project's setup and dependencies.
+   
+### shellcheck
+shellcheck is a static analysis tool for shell scripts. You need to have `shellcheck` installed on your system to use it with `pre-commit`. It is often available through package managers like apt, yum, or brew.
 
 ### Git Hooks
 
@@ -183,3 +189,9 @@ docker-compose -f "docker-compose.yml" up -d --build
 
 This image was built using
 [`GitHub Actions`](https://github.com/One-Language/One/blob/master/.github/workflows/docker-image.yml).
+
+### Other project-specific dependencies
+Depending on the specific needs of your project, you may have other requirements or dependencies. Make sure to document and manage these appropriately.
+The primary requirements for running pre-commit and contributing to the ONE Programming Language project.
+However, it's worth noting that the specific requirements can vary from one project to another, and some requirements might exist depending on the project's dependencies and tools.
+
